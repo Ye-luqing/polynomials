@@ -1,0 +1,96 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{question}{问题}
+\newtheorem{corollary}{推论}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\newtheorem{remark}{注}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{经过平面上$n+1$个整点的$n$次多项式为整系数多项式的充要
+      条件}}} \author{\small{叶卢庆\footnote{叶卢庆(1992---),男,杭州师
+      范大学理学院数学与应用数学专业本科在
+      读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学
+      院,浙江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+\begin{question}
+  设 $(x_1,y_1),\cdots,(x_n,y_{n}),(x_{n+1},y_{n+1})$ 为平面上的 $n+1$
+  个整点.其中 $x_1,x_2,\cdots,x_{n+1}$ 两两不等.我们知道,经过这 $n+1$
+  个整点的多项式只有一个.下面我们来探究经过这些点的多项式是整系数多项式
+  的充要条件.
+\end{question}
+\begin{proof}[\bf{解答}]
+  我们使用Newton插值法.易得经
+  过$(x_1,y_1),\cdots,(x_n,y_{n}),(x_{n+1},y_{n+1})$的多项式为
+
+\begin{align*}
+  f(x)=f(x_1)&+(x-x_1)f[x_1,x_2]\\&+(x-x_1)(x-x_2)f[x_1,x_2,x_3]\\&+\cdots\\&+(x-x_1)(x-x_2)\cdots
+  (x-x_{n})f[x_1,x_2,\cdots,x_{n+1}].
+\end{align*}
+其中$\forall k\geq 2$,
+$$f[x_1,x_2,\cdots,x_k]=\frac{f[x_1,\cdots,x_{k-1}]-f[x_2,\cdots,x_k]}{x_1-x_k},$$
+且 $f[x_1]=f(x_1)$,$f[x_2]=f(x_2)$.可见,$f(x)$ 从低到高次的各项系数为
+$$
+f[x_1],f[x_1,x_2],\cdots,f[x_1,x_2,\cdots,x_{n+1}].
+$$
+只要这些都是整数,那么经过这 $n+1$ 个点的多项式都是整系数多项式.
+\end{proof}
+\begin{remark}
+  有一个挺不错的推论:如果整数$x_1,x_2,...,x_{n+1}$中相邻的数都是相差1,那么
+  经过整点 $(x_1,y_1),\cdots,(x_{n+1},y_{n+1})$的 $n$ 次多项式必为整系数多项式.
+\end{remark}
+\end{document}
+
+
+
+
+
+
+
+

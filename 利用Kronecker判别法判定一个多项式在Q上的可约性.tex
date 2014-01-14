@@ -1,0 +1,84 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{利用Kronecker判别法判定$x^6+x^3+1$在有理数域上不可约}}} \author{\small{叶卢
+    庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数学与应用数学专业
+      本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭州师范大学理学院,浙
+      江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+\begin{exercise}[杭州师范大学2008年考研高等代数]
+  求证:多项式 $x^6+x^3+1$ 在有理数域上不可约.
+\end{exercise}
+\begin{proof}[\textbf{证明}]
+$f(x)=x^6+x^3+1$ 是一个6次多项式.假若 $f(x)$ 在 $\mathbf{Q}$ 上可约,则
+$f(x)$ 必定只有有限个因式(相差常数倍不算).且$f(x)$ 必定有一个次数不大
+于3的非常数因式 $g(x)$.我们选取四个整数点 $-1,0,1,2$ 上作
+函数值 $f(-1),f(0),f(1),f(2)$.经过点
+$(-1,f(-1)),(0,f(0)),(1,f(1)),(2,f(2))$ 的 $3$ 次多项式是唯一存在的,用
+手计算太麻烦,经过计算机,可得这样的3次多项式是
+$$
+11 x^3+x^2-10 x+1.
+$$
+
+\end{proof}
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+
+% BIBLIOGRAPHY
+% ----------------------------------------------------------------------------------------
+% 
+% ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
