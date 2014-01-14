@@ -1,0 +1,100 @@
+\documentclass[twoside,11pt]{article} 
+\usepackage{amsmath,amsfonts,bm}
+\usepackage{hyperref}
+\usepackage{amsthm} 
+\usepackage{amssymb}
+\usepackage{framed,mdframed}
+\usepackage{graphicx,color} 
+\usepackage{mathrsfs,xcolor} 
+\usepackage[all]{xy}
+\usepackage{fancybox} 
+% \usepackage{CJKutf8}
+\usepackage{xeCJK}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{corollary}{推论}
+\newtheorem{question}{问题}
+\newtheorem*{exercise}{习题}
+\newtheorem*{example}{例}
+\setCJKmainfont[BoldFont=Adobe Heiti Std R]{Adobe Song Std L}
+% \usepackage{latexdef}
+\def\ZZ{\mathbb{Z}} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth 0.00in \marginparsep 0.00in
+\textwidth 16cm \textheight 24cm \newcommand{\D}{\displaystyle}
+\newcommand{\ds}{\displaystyle} \renewcommand{\ni}{\noindent}
+\newcommand{\pa}{\partial} \newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega} \newcommand{\sik}{\sum_{i=1}^k}
+\newcommand{\vov}{\Vert\omega\Vert} \newcommand{\Umy}{U_{\mu_i,y^i}}
+\newcommand{\lamns}{\lambda_n^{^{\scriptstyle\sigma}}}
+\newcommand{\chiomn}{\chi_{_{\Omega_n}}}
+\newcommand{\ullim}{\underline{\lim}} \newcommand{\bsy}{\boldsymbol}
+\newcommand{\mvb}{\mathversion{bold}} \newcommand{\la}{\lambda}
+\newcommand{\La}{\Lambda} \newcommand{\va}{\varepsilon}
+\newcommand{\be}{\beta} \newcommand{\al}{\alpha}
+\newcommand{\dis}{\displaystyle} \newcommand{\R}{{\mathbb R}}
+\newcommand{\N}{{\mathbb N}} \newcommand{\cF}{{\mathcal F}}
+\newcommand{\gB}{{\mathfrak B}} \newcommand{\eps}{\epsilon}
+\renewcommand\refname{参考文献} \def \qed {\hfill \vrule height6pt
+  width 6pt depth 0pt} \topmargin -0.40in \oddsidemargin 0.08in
+\evensidemargin 0.08in \marginparwidth0.00in \marginparsep 0.00in
+\textwidth 15.5cm \textheight 24cm \pagestyle{myheadings}
+\markboth{\rm \centerline{}} {\rm \centerline{}}
+\begin{document}
+\title{\huge{\bf{经过$n+1$个整点的$n$ 次多项式为本原多项式的充要条件}}}
+\author{\small{叶卢庆\footnote{叶卢庆(1992---),男,杭州师范大学理学院数
+      学与应用数学专业本科在读,E-mail:h5411167@gmail.com}}\\{\small{杭
+      州师范大学理学院,浙江~杭州~310036}}} \date{}
+\maketitle
+
+% ----------------------------------------------------------------------------------------
+% ABSTRACT AND KEYWORDS
+% ----------------------------------------------------------------------------------------
+
+
+\textbf{\small{摘要}:}探讨了经过 $n+1$ 个整点的$n$次多项式为本原多项式
+的充要条件 \smallskip
+
+\textbf{\small{关键词}:}Newton插值,本原多项式\smallskip
+
+
+\vspace{30pt} % Some vertical space between the abstract and first section
+
+% ----------------------------------------------------------------------------------------
+% ESSAY BODY
+% ----------------------------------------------------------------------------------------
+\begin{question}
+  设 $(x_1,y_1),\cdots,(x_n,y_{n}),(x_{n+1},y_{n+1})$ 为平面上
+  的 $n+1$个整点.其中 $x_1,x_2,\cdots,x_{n+1}$ 两两不等.我们知道,经过
+  这 $n+1$个整点的多项式只有一个.下面我们来探究经过这些点的多项式是本原
+  多项式的充要条件.
+\end{question}
+\bigskip
+在文章
+\href{https://github.com/Ye-luqing/polynomials/blob/master/%E7%BB%8F%E8%BF%87%E5%B9%B3%E9%9D%A2%E4%B8%8An%2B1%E4%B8%AA%E6%95%B4%E7%82%B9%E7%9A%84%E5%A4%9A%E9%A1%B9%E5%BC%8F%E4%B8%BA%E6%95%B4%E7%B3%BB%E6%95%B0%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E5%85%85%E8%A6%81%E6%9D%A1%E4%BB%B6.tex}{
+                                经过平面上$n+1$个整点的多项式为整系数多
+                                项式的充要条件}里,我们已经表明,经过这
+                              $n+1$ 个点的多项式 $f(x)$ 是整系数多项式
+                              当且仅当
+$$
+f[x_1],f[x_1,x_2],\cdots,f[x_1,x_2,\cdots,x_{n+1}].
+$$
+里的每个数都是整数.其中$\forall k\geq 2$,
+$$f[x_1,x_2,\cdots,x_k]=\frac{f[x_1,\cdots,x_{k-1}]-f[x_2,\cdots,x_k]}{x_1-x_k},$$
+且 $f[x_1]=f(x_1)$,$f[x_2]=f(x_2)$.
+
+  \begin{thebibliography}{}
+    % \bibitem[1]{tao}Terence Tao.陶哲轩实分析[M].王昆扬,译.北京:人民邮
+    %   电
+    %   出版
+    %   社,2008:376
+  \end{thebibliography}
+  % ----------------------------------------------------------------------------------------
+\end{document}
+
+
+
+
+
+
+
+
